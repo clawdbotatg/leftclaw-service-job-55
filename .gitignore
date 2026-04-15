@@ -21,3 +21,9 @@ node_modules
 
 # cli
 dist
+.env
+.env.*
+!.env.example
+packages/foundry/.env
+packages/nextjs/.env.local
+ipfs-upload.config.json
