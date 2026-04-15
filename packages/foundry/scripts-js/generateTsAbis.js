@@ -193,7 +193,9 @@ function processAllDeployments(broadcastPath) {
         inheritedFunctions: getInheritedFunctions(artifact),
         deploymentFile: deployment.deploymentFile,
         deploymentScript: deployment.deploymentScript,
-        deployedOnBlock: deployment?.deployedOnBlock && Number(BigInt(deployment.deployedOnBlock)),
+        deployedOnBlock:
+          deployment?.deployedOnBlock &&
+          Number(BigInt(deployment.deployedOnBlock)),
       };
     }
   });

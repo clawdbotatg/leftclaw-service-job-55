@@ -15,10 +15,10 @@ async function selectOrCreateKeystore() {
 
   try {
     const keystores = existsSync(keystorePath)
-    ? readdirSync(keystorePath).filter(
-        (keystore) => keystore !== "scaffold-eth-default"
-      )
-    : [];
+      ? readdirSync(keystorePath).filter(
+          (keystore) => keystore !== "scaffold-eth-default"
+        )
+      : [];
 
     if (keystores.length === 0) {
       console.log(
